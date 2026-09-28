@@ -8,7 +8,7 @@ class TextCustom extends StatelessWidget {
   const TextCustom({
     super.key,
     required this.text,
-    this.fontSize = 14,
+    this.fontSize = 20,
     this.color = Colors.black,
   });
 

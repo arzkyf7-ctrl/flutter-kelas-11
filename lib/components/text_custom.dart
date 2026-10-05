@@ -9,7 +9,7 @@ class TextCustom extends StatelessWidget {
     super.key,
     required this.text,
     this.fontSize = 20,
-    this.color = Colors.black,
+    this.color = const Color.fromARGB(255, 37, 84, 254),
   });
 
   @override

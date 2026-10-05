@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_kelas_11/login_page.dart';
 import 'package:flutter_kelas_11/pages/calculator_page.dart';
+import 'package:flutter_kelas_11/routes.dart';
 import 'package:flutter_kelas_11/simple_calculator.dart';
 import 'package:get/get.dart';
 
@@ -14,7 +15,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(home: CalculatorPage());
+    return GetMaterialApp(
+      title: 'Flutter Kelas 11',
+      initialRoute: Routes.registration,
+      getPages: Routes.myPages,
+    );
   }
 }
 

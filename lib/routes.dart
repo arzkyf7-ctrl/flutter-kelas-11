@@ -1,3 +1,4 @@
+import 'package:flutter_kelas_11/controllers/makanan_detail_controller.dart';
 import 'package:flutter_kelas_11/details/makanan_detail.dart';
 import 'package:flutter_kelas_11/pages/confirm_regis.dart';
 import 'package:flutter_kelas_11/pages/list_makanan_page.dart';

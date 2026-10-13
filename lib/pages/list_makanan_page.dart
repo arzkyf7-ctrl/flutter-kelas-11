@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_kelas_11/controllers/list_makanan_controller.dart';
+import 'package:flutter_kelas_11/routes.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get/route_manager.dart';
 import 'package:get/state_manager.dart';
@@ -20,7 +21,15 @@ class ListMakananPage extends StatelessWidget {
             final makanan = controller.listMakanan[index];
             return InkWell(
               onTap: () {
-                Get.toNamed('/makananDetail', arguments: makanan);
+                Get.toNamed(
+                  '/makananDetail',
+                  arguments: {
+                    'namaMakanan': makanan.namaMakanan,
+                    'harga': makanan.harga,
+                    'deskripsi': makanan.deskripsi,
+                    'gambar': makanan.gambar,
+                  },
+                );
               },
               child: ListTile(
                 title: Text(makanan.namaMakanan),

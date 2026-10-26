@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_kelas_11/login_page.dart';
-import 'package:flutter_kelas_11/pages/calculator_page.dart';
 import 'package:flutter_kelas_11/routes.dart';
-import 'package:flutter_kelas_11/simple_calculator.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -17,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Kelas 11',
-      initialRoute: Routes.listMakanan,
+      initialRoute: Routes.mainMenu,
       getPages: Routes.myPages,
     );
   }

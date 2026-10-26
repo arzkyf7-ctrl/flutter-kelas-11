@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kelas_11/components/text_custom.dart';
 import 'package:flutter_kelas_11/controllers/makanan_detail_controller.dart';
 import 'package:get/get.dart';
 
@@ -9,7 +10,7 @@ class MakananDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Detail Page")),
+      appBar: AppBar(title: TextCustom(text: "Detail Makanan")),
       body: Container(
         margin: EdgeInsets.all(10),
         child: Column(

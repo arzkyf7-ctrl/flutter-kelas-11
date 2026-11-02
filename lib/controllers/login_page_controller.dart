@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_kelas_11/routes.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 
@@ -28,6 +29,7 @@ class LoginPageController extends GetxController {
           final data = jsonDecode(response.body);
           if (data['status'] == true) {
             Get.snackbar("Berhasil", data['message']);
+            Get.toNamed(Routes.mainMenu);
           } else {
             Get.snackbar("Gagal", data['message']);
           }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kelas_11/components/button_custom.dart';
 import 'package:flutter_kelas_11/components/heading_text.dart';
 import 'package:flutter_kelas_11/controllers/login_page_controller.dart';
 import 'package:get/get.dart';
@@ -23,11 +24,10 @@ class LoginPage extends StatelessWidget {
               controller: controller.txtPassword,
               decoration: InputDecoration(label: Text("Masukkan password")),
             ),
-            OutlinedButton(
-              onPressed: () {
-                controller.login();
-              },
-              child: Text("Login"),
+            Obx(
+              () => controller.isLoading.value
+                  ? Center(child: CircularProgressIndicator())
+                  : ButtonCustom(BtnText: "Login"),
             ),
           ],
         ),

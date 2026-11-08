@@ -27,7 +27,12 @@ class LoginPage extends StatelessWidget {
             Obx(
               () => controller.isLoading.value
                   ? Center(child: CircularProgressIndicator())
-                  : ButtonCustom(BtnText: "Login"),
+                  : OutlinedButton(
+                      onPressed: () {
+                        controller.login();
+                      },
+                      child: Text("Login"),
+                    ),
             ),
           ],
         ),

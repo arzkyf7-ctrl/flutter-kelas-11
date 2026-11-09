@@ -8,6 +8,12 @@ class HeadingText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text, style: TextStyle(fontSize: fontSize.toDouble()));
+    return Text(
+      text,
+      style: TextStyle(
+        fontSize: fontSize.toDouble(),
+        fontWeight: FontWeight.bold,
+      ),
+    );
   }
 }

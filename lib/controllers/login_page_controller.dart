@@ -11,6 +11,7 @@ class LoginPageController extends GetxController {
   TextEditingController txtPassword = TextEditingController();
   var isLoading = false.obs;
   var loginModel = Rxn<LoginModel>();
+  
   //method for hit API
   void login() async {
     if (txtUsername.text.toString().isEmpty ||

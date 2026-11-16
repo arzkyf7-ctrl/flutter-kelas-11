@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Kelas 11',
-      initialRoute: Routes.login,
+      initialRoute: Routes.mainMenu2,
       getPages: Routes.myPages,
     );
   }
